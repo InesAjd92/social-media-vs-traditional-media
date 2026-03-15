@@ -1,0 +1,14 @@
+year,social_media_min_day,tv_min_15_49,tv_min_50plus,gap_50plus_vs_1549,methodological_break,idx_social_100,idx_tv_100
+2012,90.0,199.0,302.0,103.0,,100.0,100.0
+2013,100.0,191.0,302.0,111.0,,111.1,96.0
+2014,111.0,183.0,302.0,119.0,Rattrapage TV sur téléviseur (replay +7j),123.3,92.0
+2015,116.0,182.0,307.0,125.0,,128.9,91.5
+2016,122.0,181.0,307.0,126.0,Différé + rattrapage sans limite de date,135.6,91.0
+2017,135.0,174.0,312.0,138.0,,150.0,87.4
+2018,142.0,162.0,313.0,151.0,Autres écrans (ordi/tablette/téléphone) à domicile pour 4 ans+,157.8,81.4
+2019,144.0,150.0,312.0,162.0,,160.0,75.4
+2020,145.0,166.0,346.0,180.0,Hors domicile en mobilité pour les 15 ans+,161.1,83.4
+2021,147.0,145.0,338.0,193.0,,163.3,72.9
+2022,147.0,126.0,323.0,197.0,,163.3,63.3
+2023,143.0,115.0,316.0,201.0,,158.9,57.8
+2024,143.0,,,,RUPTURE MAJEURE — nouvelle méthodologie complète (voir note_2024),158.9,

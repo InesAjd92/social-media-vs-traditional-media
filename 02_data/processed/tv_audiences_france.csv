@@ -1,0 +1,17 @@
+year,country,tv_min_4_14,tv_min_15_49,tv_min_50plus,gap_50plus_vs_1549,methodological_break,is_break_year,source,note_2024,series,idx_tv_15_49_100,idx_tv_50plus_100
+2009,France,131.0,179.0,266.0,87.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,89.9,88.1
+2010,France,132.0,185.0,274.0,89.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,93.0,90.7
+2011,France,138.0,196.0,299.0,103.0,Différé +7j (enregistrement personnel),True,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,98.5,99.0
+2012,France,135.0,199.0,302.0,103.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,100.0,100.0
+2013,France,129.0,191.0,302.0,111.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,96.0,100.0
+2014,France,118.0,183.0,302.0,119.0,Rattrapage TV sur téléviseur (replay +7j),True,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,92.0,100.0
+2015,France,116.0,182.0,307.0,125.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,91.5,101.7
+2016,France,113.0,181.0,307.0,126.0,Différé + rattrapage sans limite de date,True,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,91.0,101.7
+2017,France,106.0,174.0,312.0,138.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,87.4,103.3
+2018,France,99.0,162.0,313.0,151.0,Autres écrans (ordi/tablette/téléphone) à domicile pour 4 ans+,True,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,81.4,103.6
+2019,France,88.0,150.0,312.0,162.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,75.4,103.3
+2020,France,88.0,166.0,346.0,180.0,Hors domicile en mobilité pour les 15 ans+,True,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,83.4,114.6
+2021,France,70.0,145.0,338.0,193.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,72.9,111.9
+2022,France,61.0,126.0,323.0,197.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,63.3,107.0
+2023,France,58.0,115.0,316.0,201.0,,False,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1",,CNC_longue_2009_2024,57.8,104.6
+2024,France,,,,,RUPTURE MAJEURE — nouvelle méthodologie complète (voir note_2024),True,"CNC/Médiamétrie — Médiamat annuel, feuille DuréeEcoute1","Données 2024 non comparables à la série historique. Médiamétrie a élargi sa mesure au 01/01/2024 : tous foyers (62,6M vs 57,3M), tous lieux, tous écrans, tous modes (live/différé/replay/preview). Info qualitative disponible : durée vidéo tous Français = 4h23/j, foyers équipés TV = 3h12/j, 36% de la conso vidéo à la demande, +18% TV chez 15-24 ans en été (effet JO Paris 2024). Sources : Médiamétrie L'Année TV 2024, 23/01/2025 ; Médiamat Annuel 2024, 30/12/2024.",CNC_longue_2009_2024,,

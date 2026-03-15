@@ -1,0 +1,49 @@
+year,country,source,methodological_break,comparable_to_prev,age_group,tv_min_day,tv_hrs_day
+2009,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,179,2.98
+2009,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,131,2.18
+2009,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,266,4.43
+2010,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,185,3.08
+2010,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,132,2.2
+2010,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,274,4.57
+2011,France,CNC / Médiamétrie — Médiamat annuel,¹ TV différé +7j (enregistrement personnel),False,15-49 ans,196,3.27
+2011,France,CNC / Médiamétrie — Médiamat annuel,¹ TV différé +7j (enregistrement personnel),False,4-14 ans,138,2.3
+2011,France,CNC / Médiamétrie — Médiamat annuel,¹ TV différé +7j (enregistrement personnel),False,50 ans+,299,4.98
+2012,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,199,3.32
+2012,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,135,2.25
+2012,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,302,5.03
+2013,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,191,3.18
+2013,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,129,2.15
+2013,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,302,5.03
+2014,France,CNC / Médiamétrie — Médiamat annuel,² Rattrapage TV sur téléviseur intégré,False,15-49 ans,183,3.05
+2014,France,CNC / Médiamétrie — Médiamat annuel,² Rattrapage TV sur téléviseur intégré,False,4-14 ans,118,1.97
+2014,France,CNC / Médiamétrie — Médiamat annuel,² Rattrapage TV sur téléviseur intégré,False,50 ans+,302,5.03
+2015,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,182,3.03
+2015,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,116,1.93
+2015,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,307,5.12
+2016,France,CNC / Médiamétrie — Médiamat annuel,³ Différé + rattrapage sans limite de date,False,15-49 ans,181,3.02
+2016,France,CNC / Médiamétrie — Médiamat annuel,³ Différé + rattrapage sans limite de date,False,4-14 ans,113,1.88
+2016,France,CNC / Médiamétrie — Médiamat annuel,³ Différé + rattrapage sans limite de date,False,50 ans+,307,5.12
+2017,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,174,2.9
+2017,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,106,1.77
+2017,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,312,5.2
+2018,France,CNC / Médiamétrie — Médiamat annuel,"⁴ Autres écrans (ordi, tablette, téléphone) pour 4 ans+",False,15-49 ans,162,2.7
+2018,France,CNC / Médiamétrie — Médiamat annuel,"⁴ Autres écrans (ordi, tablette, téléphone) pour 4 ans+",False,4-14 ans,99,1.65
+2018,France,CNC / Médiamétrie — Médiamat annuel,"⁴ Autres écrans (ordi, tablette, téléphone) pour 4 ans+",False,50 ans+,313,5.22
+2019,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,150,2.5
+2019,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,88,1.47
+2019,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,312,5.2
+2020,France,CNC / Médiamétrie — Médiamat annuel,"⁵ Hors domicile, tous lieux et écrans, pour 15 ans+",False,15-49 ans,166,2.77
+2020,France,CNC / Médiamétrie — Médiamat annuel,"⁵ Hors domicile, tous lieux et écrans, pour 15 ans+",False,4-14 ans,88,1.47
+2020,France,CNC / Médiamétrie — Médiamat annuel,"⁵ Hors domicile, tous lieux et écrans, pour 15 ans+",False,50 ans+,346,5.77
+2021,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,145,2.42
+2021,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,70,1.17
+2021,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,338,5.63
+2022,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,126,2.1
+2022,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,61,1.02
+2022,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,323,5.38
+2023,France,CNC / Médiamétrie — Médiamat annuel,,True,15-49 ans,115,1.92
+2023,France,CNC / Médiamétrie — Médiamat annuel,,True,4-14 ans,58,0.97
+2023,France,CNC / Médiamétrie — Médiamat annuel,,True,50 ans+,316,5.27
+2024,France,Médiamétrie — L'Année TV 2024 (jan. 2025) + DEPS / Ministère de la Culture 2025,"⁶ NOUVELLE MESURE — tous foyers (avec non-équipés), périmètre élargi à 62,6M",False,15-49 ans,110,1.83
+2024,France,Médiamétrie — L'Année TV 2024 (jan. 2025) + DEPS / Ministère de la Culture 2025,"⁶ NOUVELLE MESURE — tous foyers (avec non-équipés), périmètre élargi à 62,6M",False,4-14 ans,50,0.83
+2024,France,Médiamétrie — L'Année TV 2024 (jan. 2025) + DEPS / Ministère de la Culture 2025,"⁶ NOUVELLE MESURE — tous foyers (avec non-équipés), périmètre élargi à 62,6M",False,50 ans+,315,5.25
