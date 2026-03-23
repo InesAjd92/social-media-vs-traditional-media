@@ -1,5 +1,5 @@
-# 📱📺 Social Media vs Traditional Media
-### *Réseaux Sociaux vs Médias Traditionnels*
+# 📱📺 Usages numériques :
+### *Réseaux sociaux vs médias traditionnels*
 
 > 🇫🇷 **[Français](#français)** · 🇬🇧 **[English](#english)**
 
@@ -11,17 +11,17 @@
 
 Ce projet de recherche data examine la relation entre la montée en puissance des réseaux sociaux numériques et des plateformes de streaming, et le déclin structurel de la consommation des médias traditionnels chez les jeunes adultes (18–34 ans).
 
-Il s'inscrit dans une démarche scientifique rigoureuse combinant :
+Il s'inscrit dans une démarche scientifique combinant :
 - **Collecte de données multi-sources** (scraping, APIs, open data)
 - **Analyse exploratoire des données** (EDA) via Python
 - **Visualisation de données** avancée
-- **Dashboard interactif** Power BI
 
 ---
 
 ### 🔬 Problématique
 
-> *"Dans quelle mesure la montée en puissance des réseaux sociaux numériques et des plateformes de streaming est-elle associée au déclin structurel de la consommation des médias traditionnels (télévision linéaire, cinéma, presse) chez les jeunes adultes (18–34 ans) ? Une analyse longitudinale et comparative multi-pays (2013–2024)."*
+> *"Dans quelle mesure la montée en puissance des réseaux sociaux numériques et des plateformes de streaming est-elle associée au déclin structurel de la consommation des médias traditionnels (télévision, cinéma, presse) chez les jeunes adultes (18–34 ans)
+> Nous réaliserons ici une analyse temporelle et comparatrice couvrant dix ans de données (2013–2024)."*
 
 ---
 
@@ -29,9 +29,9 @@ Il s'inscrit dans une démarche scientifique rigoureuse combinant :
 
 | Hypothèse | Énoncé |
 |---|---|
-| **H1** | La progression du temps passé sur les réseaux sociaux est corrélée négativement avec la durée d'écoute TV linéaire chez les 18-34 ans |
+| **H1** | La progression du temps passé sur les réseaux sociaux est corrélée négativement avec la durée d'écoute TV chez les 18-34 ans |
 | **H2** | Le streaming joue un rôle médiateur : il capte d'abord l'audience TV avant d'être lui-même concurrencé par les réseaux sociaux |
-| **H3** | L'effet est générationnel et s'accentue dans le temps — le fossé entre jeunes et seniors se creuse chaque année |
+| **H3** | L'effet est générationnel et s'accentue dans le temps - le fossé entre jeunes et seniors se creuse chaque année |
 
 ---
 
@@ -95,16 +95,15 @@ Il s'inscrit dans une démarche scientifique rigoureuse combinant :
 
 ### 👩‍💻 Auteure
 
-**Inès Amdjahed** — Master 2 Information-Communication : Données et Société
-Université Paris Nanterre · 2024
-📧 ines.amdjahed@email.com · 💼 [LinkedIn](https://linkedin.com/in/ines-amdjahed)
+**Inès Amdjahed** — Data analyst spécialisée en sciences sociales & études médias
+📧 amdjahedines@gmail.com · 💼 [LinkedIn](https://linkedin.com/in/ines-amdjahed)
 
 ---
 ---
 
 ## English
 
-### 📌 Project Overview
+### 📌 Project overview
 
 This data research project examines the relationship between the rise of social media and streaming platforms, and the structural decline of traditional media consumption among young adults (18–34).
 
