@@ -1,5 +1,4 @@
-# 📱📺 Usages numériques :
-### *Réseaux sociaux vs médias traditionnels*
+# 📱📺 Usages numériques : Réseaux sociaux vs médias traditionnels
 
 > 🇫🇷 **[Français](#français)** · 🇬🇧 **[English](#english)**
 
