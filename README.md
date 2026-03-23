@@ -1,4 +1,4 @@
-# 📱📺 Usages numériques : Réseaux sociaux vs médias traditionnels
+# 📱📺 Evolution des usages de consommation médias chez les jeunes adultes
 
 > 🇫🇷 **[Français](#français)** · 🇬🇧 **[English](#english)**
 
