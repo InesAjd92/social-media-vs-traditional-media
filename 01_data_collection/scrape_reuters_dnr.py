@@ -3,35 +3,24 @@
 scrape_reuters_dnr.py
 ================================================================================
 
-FR :
-    Script de collecte des données du Reuters Institute Digital News Report (DNR).
+Script de collecte des données du Reuters Institute Digital News Report (DNR).
     
-    Le Reuters Institute (Université d'Oxford) publie chaque année depuis 2013
-    le Digital News Report, l'enquête internationale la plus complète sur les
-    habitudes de consommation d'information et de médias numériques.
+Le Reuters Institute (Université d'Oxford) publie chaque année depuis 2013
+le Digital News Report, l'enquête internationale la plus complète sur les
+habitudes de consommation d'information et de médias numériques.
     
-    Ce script collecte les données publiques disponibles via :
-      1. L'API du Reuters Institute DNR (données tabulaires interactives)
-      2. Les fichiers Excel/CSV disponibles en téléchargement direct
+Ce script servira à collecter les données publiques disponibles via :
+1. L'API du Reuters Institute DNR (données tabulaires interactives)
+2. Les fichiers Excel/CSV disponibles en téléchargement direct
     
-    Variables d'intérêt pour notre recherche :
-      - Taux d'utilisation des réseaux sociaux comme source d'information
-      - Taux d'utilisation de la TV comme source d'information
-      - Segmentation par tranche d'âge (18-24, 25-34, 35-44, 45+)
-      - Couverture : ~47 pays, 2013–2025
+Variables d'intérêt pour notre recherche :
+- Taux d'utilisation des réseaux sociaux comme source d'information
+- Taux d'utilisation de la TV comme source d'information
+- Segmentation par tranche d'âge (18-24, 25-34, 35-44, 45+)
+- Couverture : ~47 pays, 2013–2025
 
-EN :
-    Data collection script for the Reuters Institute Digital News Report (DNR).
-    
-    The Reuters Institute (University of Oxford) has published the Digital News
-    Report annually since 2013 — the most comprehensive international survey on
-    digital news and media consumption habits.
-    
-    Variables of interest:
-      - Social media usage rate as news source
-      - TV usage rate as news source
-      - Age group segmentation (18-24, 25-34, 35-44, 45+)
-      - Coverage: ~47 countries, 2013–2025
+Note : la méthodologie est la même que pour le scraping des données OWID. 
+Nous détaillerons moins ici. 
 
 ================================================================================
 Auteure / Author : Inès Amdjahed
@@ -44,7 +33,7 @@ import os
 import requests
 import pandas as pd
 from datetime import datetime
-from io import StringIO
+from io import StringIO 
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 
@@ -55,28 +44,20 @@ COLLECTION_DATE = datetime.now().strftime('%Y-%m-%d')
 
 # ── Données Reuters Institute — Construction manuelle ─────────────────────────
 #
-# FR :
-#   Le Reuters Institute DNR ne propose pas d'API CSV directe pour toutes
-#   ses données historiques. On reconstruit donc un dataset longitudinal
-#   à partir des chiffres clés publiés dans les rapports annuels (2013–2024).
+# Le Reuters Institute DNR ne propose pas d'API CSV directe pour toutes
+#  ses données historiques. On reconstruit donc un dataset à partir des 
+# chiffres clés publiés dans les rapports annuels (2013–2024).
 #   
-#   Ces données sont issues des tableaux de données interactifs disponibles sur :
-#   https://www.digitalnewsreport.org/survey/
+#  Ces données sont issues des tableaux de données interactifs disponibles sur :
+#  https://www.digitalnewsreport.org/survey/
 #   
-#   Métrique : "% qui utilisent [source] pour les nouvelles chaque semaine"
-#   Population : Internautes adultes, représentatifs par pays
-#
-# EN :
-#   Reuters DNR does not expose a direct CSV API for all historical data.
-#   We reconstruct a longitudinal dataset from key figures published in
-#   annual reports (2013–2024).
-#   
-#   Metric: "% who use [source] for news each week"
-#   Population: Online adults, nationally representative
+#  Métrique : "% qui utilisent [source] pour les nouvelles chaque semaine"
+#  Population : Internautes adultes, représentatifs par pays
 
 REUTERS_DNR_DATA = {
-    # ── Usage TV comme source d'info par tranche d'âge (moyenne internationale)
+    # Usage TV comme source d'info par tranche d'âge (moyenne internationale)
     # Source : DNR Interactive Data / Tableau croisé Age × Source
+    # PROPORTION THAT SAY EACH IS THEIR MAIN SOURCE OF NEWS (BY AGE GROUP) - USA
     "tv_as_news_source_by_age": {
         "description_fr": "% utilisant la TV comme source d'information principale, par tranche d'âge",
         "description_en": "% using TV as main news source, by age group",
@@ -97,7 +78,7 @@ REUTERS_DNR_DATA = {
         }
     },
 
-    # ── Usage réseaux sociaux comme source d'info par tranche d'âge
+    # Usage réseaux sociaux comme source d'info par tranche d'âge
     "social_media_as_news_source_by_age": {
         "description_fr": "% utilisant les réseaux sociaux comme source d'information, par tranche d'âge",
         "description_en": "% using social media as news source, by age group",
@@ -117,7 +98,7 @@ REUTERS_DNR_DATA = {
         }
     },
 
-    # ── Usage streaming comme source de divertissement par tranche d'âge
+    # Usage streaming comme source de divertissement par tranche d'âge
     "streaming_usage_by_age": {
         "description_fr": "% utilisant des services de streaming (Netflix, YouTube...) par tranche d'âge",
         "description_en": "% using streaming services (Netflix, YouTube...) by age group",
@@ -139,26 +120,10 @@ REUTERS_DNR_DATA = {
 # ── Fonctions ──────────────────────────────────────────────────────────────────
 
 def build_longitudinal_dataframe(name: str, config: dict) -> pd.DataFrame:
-    """
-    FR :
-        Construit un DataFrame longitudinal (format long / tidy data)
-        à partir des données structurées en dictionnaire.
+    """ Construit un DataFrame (format long / tidy data) à partir des données structurées en dictionnaire.
+Le format long (une observation par ligne) est le format standard pour les analyses de données en panel et les visualisations avec seaborn/plotly.
         
-        Le format long (une observation par ligne) est le format
-        standard pour les analyses de données en panel et les
-        visualisations avec seaborn/plotly.
-        
-        Colonnes produites : year | age_group | value | source | metric
-    
-    EN :
-        Builds a longitudinal DataFrame (long/tidy format)
-        from the nested dictionary data.
-        
-        Long format (one observation per row) is the standard
-        for panel data analysis and seaborn/plotly visualization.
-        
-        Output columns: year | age_group | value | source | metric
-    """
+Colonnes produites : year | age_group | value | source | metric """
     rows = []
     for year, age_data in config['data'].items():
         for age_group, value in age_data.items():
@@ -174,7 +139,7 @@ def build_longitudinal_dataframe(name: str, config: dict) -> pd.DataFrame:
     df = pd.DataFrame(rows)
     df = df.sort_values(['year', 'age_group']).reset_index(drop=True)
     
-    print(f"\n✅ Dataset construit : {name}")
+    print(f"\n Dataset construit : {name}")
     print(f"   Shape : {df.shape}")
     print(f"   Années : {df['year'].min()} → {df['year'].max()}")
     print(f"   Tranches d'âge : {df['age_group'].unique().tolist()}")
@@ -187,20 +152,15 @@ def save_dataset(df: pd.DataFrame, name: str) -> str:
     filename = f"reuters_dnr_{name}_{COLLECTION_DATE}.csv"
     filepath = os.path.join(OUTPUT_DIR, filename)
     df.to_csv(filepath, index=False, encoding='utf-8')
-    print(f"   💾 Sauvegardé : {filepath}")
+    print(f"   Sauvegardé : {filepath}")
     return filepath
 
 
 def build_combined_dataset(dataframes: dict) -> pd.DataFrame:
     """
-    FR :
-        Fusionne tous les datasets Reuters DNR en un seul DataFrame consolidé.
-        Cette consolidation facilite les analyses croisées (ex: TV vs réseaux sociaux
-        sur la même tranche d'âge et la même année).
-    
-    EN :
-        Merges all Reuters DNR datasets into one consolidated DataFrame.
-        This consolidation facilitates cross-variable analysis.
+ Fusionne tous les datasets Reuters DNR en un seul DataFrame consolidé.
+Cette consolidation facilite les analyses croisées (ex: TV vs réseaux sociaux sur la même tranche d'âge et la même année).
+ 
     """
     all_dfs = []
     for name, df in dataframes.items():
@@ -215,7 +175,7 @@ def build_combined_dataset(dataframes: dict) -> pd.DataFrame:
 
 def main():
     print("=" * 60)
-    print("📡 COLLECTE DONNÉES — Reuters Institute DNR")
+    print(" COLLECTE DONNÉES - Reuters Institute DNR")
     print(f"   Date : {COLLECTION_DATE}")
     print(f"   Datasets : {len(REUTERS_DNR_DATA)}")
     print("=" * 60)
@@ -224,7 +184,7 @@ def main():
 
     for name, config in REUTERS_DNR_DATA.items():
         print(f"\n{'─'*60}")
-        print(f"📥 Construction dataset : {name}")
+        print(f" Construction dataset : {name}")
         print(f"   {config['description_fr']}")
         
         df = build_longitudinal_dataframe(name, config)
@@ -233,14 +193,14 @@ def main():
 
     # Dataset combiné
     print(f"\n{'═'*60}")
-    print("🔗 CONSOLIDATION — Fusion de tous les datasets DNR")
+    print(" CONSOLIDATION - Fusion de tous les datasets DNR")
     combined = build_combined_dataset(dataframes)
     combined_path = os.path.join(OUTPUT_DIR, f"reuters_dnr_combined_{COLLECTION_DATE}.csv")
     combined.to_csv(combined_path, index=False, encoding='utf-8')
-    print(f"   💾 Dataset combiné sauvegardé : {combined_path}")
+    print(f"   Dataset combiné sauvegardé : {combined_path}")
 
     print(f"\n{'='*60}")
-    print("✅ COLLECTE TERMINÉE / COLLECTION COMPLETE")
+    print("COLLECTE TERMINÉE / COLLECTION COMPLETE")
     print(f"   {len(dataframes)} datasets collectés")
     print(f"   Dossier : {OUTPUT_DIR}")
     print(f"{'='*60}")

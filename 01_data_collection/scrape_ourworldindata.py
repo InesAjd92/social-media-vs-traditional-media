@@ -535,5 +535,6 @@ def main():
 # Ce bloc garantit que main() s'exécute seulement quand on lance ce fichier
 # (python scrape_ourworldindata.py), et pas quand on l'importe
 # depuis un autre fichier Python (import scrape_ourworldindata)
+
 if __name__ == "__main__":
     main()
