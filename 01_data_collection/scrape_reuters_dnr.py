@@ -167,7 +167,7 @@ Cette consolidation facilite les analyses croisées (ex: TV vs réseaux sociaux 
         all_dfs.append(df)
     
     combined = pd.concat(all_dfs, ignore_index=True)
-    print(f"\n📊 Dataset combiné : {combined.shape}")
+    print(f"\n Dataset combiné : {combined.shape}")
     return combined
 
 
