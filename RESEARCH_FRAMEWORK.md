@@ -1,6 +1,6 @@
-# 🔬 Cadre de Recherche / Research Framework
+# Cadre de Recherche / Research Framework
 
-> 🇫🇷 **[Français](#français)** · 🇬🇧 **[English](#english)**
+> **[Français](#français)** ·  **[English](#english)**
 
 ---
 
@@ -44,16 +44,15 @@ Cette problématique se décline en trois sous-questions :
 
 ---
 
-#### H2 — Hypothèse de médiation par le streaming
-*Le streaming joue un rôle médiateur : il capte d'abord l'audience TV avant d'être lui-même concurrencé par les réseaux sociaux.*
+H2 — Hypothèse de concomitance plateformes / chute TV
+*L'explosion des plateformes sociales courtes (TikTok, Instagram Reels) coïncide temporellement avec la période de chute TV la plus prononcée chez les 15-34 ans (2018–2023), suggérant un effet de substitution directe de l'attention.*
 
 **Indicateurs mesurables :**
-- Pénétration des services SVOD par tranche d'âge (2013–2024)
-- Évolution du temps de streaming vs TV linéaire vs réseaux sociaux
-- Analyse de la chronologie des ruptures de tendance
+- Croissance MAU des principales plateformes sociales (2012–2024)
+- Superposition avec la période de chute TV 15-34 ans la plus forte (−52% en 5 ans)
+- Analyse des ruptures de tendance (breakpoint 2018 / COVID 2020)
 
-**Résultat attendu :** Pic streaming vers 2018-2020, stabilisation puis déclin relatif au profit des réseaux sociaux
-
+**Résultat attendu :** Corrélation temporelle entre explosion MAU TikTok (+1.7B, 2018–2021) et accélération du décrochage TV 15-34
 ---
 
 #### H3 — Hypothèse de fracture générationnelle
