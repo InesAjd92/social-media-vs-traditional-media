@@ -1,14 +1,14 @@
-# 📱📺 Evolution des usages de consommation médias chez les jeunes adultes
+# Réseaux sociaux & effondrement de la TV chez les 15-34 ans
 
-> 🇫🇷 **[Français](#français)** · 🇬🇧 **[English](#english)**
+>  **[Français](#français)** ·  **[English](#english)**
 
 ---
 
 ## Français
 
-### 📌 Présentation du projet
+### Présentation du projet
 
-Ce projet de recherche data examine la relation entre la montée en puissance des réseaux sociaux numériques et des plateformes de streaming, et le déclin structurel de la consommation des médias traditionnels chez les jeunes adultes (18–34 ans).
+Ce projet de recherche data examine la relation entre la montée en puissance des réseaux sociaux numériques et le déclin structurel de la consommation de la télévision chez les jeunes adultes (18–34 ans).
 
 Il s'inscrit dans une démarche scientifique combinant :
 - **Collecte de données multi-sources** (scraping, APIs, open data)
@@ -17,9 +17,9 @@ Il s'inscrit dans une démarche scientifique combinant :
 
 ---
 
-### 🔬 Problématique
+### Problématique
 
-> *"Dans quelle mesure la montée en puissance des réseaux sociaux numériques et des plateformes de streaming est-elle associée au déclin structurel de la consommation des médias traditionnels (télévision, cinéma, presse) chez les jeunes adultes (18–34 ans)
+> *"Dans quelle mesure la montée en puissance des réseaux sociaux numérique est-elle associée au déclin structurel de la consommation de la télévision chez les jeunes adultes (18–34 ans)
 > Nous réaliserons ici une analyse temporelle et comparatrice couvrant dix ans de données (2013–2024)."*
 
 ---
@@ -29,15 +29,15 @@ Il s'inscrit dans une démarche scientifique combinant :
 | Hypothèse | Énoncé |
 |---|---|
 | **H1** | La progression du temps passé sur les réseaux sociaux est corrélée négativement avec la durée d'écoute TV chez les 18-34 ans |
-| **H2** | Le streaming joue un rôle médiateur : il capte d'abord l'audience TV avant d'être lui-même concurrencé par les réseaux sociaux |
+| **H2** | L'explosion des plateformes sociales courtes (TikTok, Instagram Reels) coïncide avec une période de chute TV |
 | **H3** | L'effet est générationnel et s'accentue dans le temps - le fossé entre jeunes et seniors se creuse chaque année |
 
 ---
 
-### 🗂️ Structure du projet
+###  Structure du projet
 
 ```
-📦 social-media-vs-traditional-media/
+social-media-vs-traditional-media/
 │
 ├── README.md                          ← Ce fichier
 ├── RESEARCH_FRAMEWORK.md              ← Cadre scientifique complet
@@ -55,10 +55,7 @@ Il s'inscrit dans une démarche scientifique combinant :
 │   ├── 01_cleaning_wrangling.ipynb    ← Nettoyage & préparation
 │   ├── 02_eda_exploratory.ipynb       ← Analyse exploratoire
 │   └── 03_dataviz_final.ipynb         ← Visualisations finales
-│
-├── 04_dashboard/
-│   └── dashboard_media_trends.pbix    ← Dashboard Power BI
-│
+
 └── 05_outputs/
     ├── graphs/                        ← Exports graphiques
     └── report_summary.md              ← Synthèse des résultats
@@ -66,7 +63,7 @@ Il s'inscrit dans une démarche scientifique combinant :
 
 ---
 
-### 🛠️ Stack technique
+### Stack technique
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
@@ -78,7 +75,7 @@ Il s'inscrit dans une démarche scientifique combinant :
 
 ---
 
-### 📊 Sources de données
+### Sources de données
 
 | Source | Contenu | Couverture |
 |---|---|---|
@@ -88,21 +85,21 @@ Il s'inscrit dans une démarche scientifique combinant :
 | CNC / Médiamétrie | TV France 15-49/50+ (série longue) | France, 2009–2023 |
 | CNC Chiffres clés 2024 + Médiamat 2018 | TV France **15-34 ans** (série fine, multi-sources) | France, 2013–2023 |
 
-> ⚠️ **Note 2024 :** Médiamétrie a adopté une nouvelle méthodologie au 01/01/2024 (tous foyers, tous lieux, tous écrans — population élargie de 57,3M → 62,6M). Les données 2024 **ne sont pas comparables** à la série historique et sont encodées comme `NaN` documenté dans tous les datasets TV.
+>  **Note 2024 :** Médiamétrie a adopté une nouvelle méthodologie au 01/01/2024 (tous foyers, tous lieux, tous écrans — population élargie de 57,3M → 62,6M). Les données 2024 **ne sont pas comparables** à la série historique et sont encodées comme `NaN` documenté dans tous les datasets TV.
 
 ---
 
-### 👩‍💻 Auteure
+### Auteure
 
 **Inès Amdjahed** — Data analyst spécialisée en sciences sociales & études médias
-📧 amdjahedines@gmail.com · 💼 [LinkedIn](https://linkedin.com/in/ines-amdjahed)
+📧 amdjahedines@gmail.com · [LinkedIn](https://linkedin.com/in/ines-amdjahed)
 
 ---
 ---
 
 ## English
 
-### 📌 Project overview
+### Project overview
 
 This data research project examines the relationship between the rise of social media and streaming platforms, and the structural decline of traditional media consumption among young adults (18–34).
 
@@ -114,13 +111,13 @@ It follows a rigorous scientific approach combining:
 
 ---
 
-### 🔬 Research Question
+### Research Question
 
 > *"To what extent is the rise of social media and streaming platforms associated with the structural decline of traditional media consumption (linear TV, cinema, print press) among young adults (18–34)? A longitudinal, multi-country comparative analysis (2013–2024)."*
 
 ---
 
-### 📐 Research Hypotheses
+### Research Hypotheses
 
 | Hypothesis | Statement |
 |---|---|
@@ -130,14 +127,14 @@ It follows a rigorous scientific approach combining:
 
 ---
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 **Languages & Libraries:** Python (pandas, numpy, matplotlib, seaborn, requests, bs4, scipy)
 **Tools:** Jupyter Notebook, VS Code, Power BI, GitHub
 
 ---
 
-### 📊 Data Sources
+### Data Sources
 
 | Source | Content | Coverage |
 |---|---|---|
@@ -149,7 +146,7 @@ It follows a rigorous scientific approach combining:
 
 ---
 
-### 👩‍💻 Author
+### Author
 
 **Inès Amdjahed** — M2 Information & Communication: Data and Society
 Université Paris Nanterre · 2024
