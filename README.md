@@ -1,111 +1,3 @@
-<<<<<<< HEAD
-# Réseaux sociaux & effondrement de la TV chez les 15-34 ans
-
->  **[Français](#français)** ·  **[English](#english)**
-
----
-
-## Français
-
-### Présentation du projet
-
-Ce projet de recherche data examine la relation entre la montée en puissance des réseaux sociaux numériques et le déclin structurel de la consommation de la télévision chez les jeunes adultes (18–34 ans).
-
-Il s'inscrit dans une démarche scientifique combinant :
-- **Collecte de données multi-sources** (scraping, APIs, open data)
-- **Analyse exploratoire des données** (EDA) via Python
-- **Visualisation de données** avancée
-
----
-
-### Problématique
-
-> *"Dans quelle mesure la montée en puissance des réseaux sociaux numérique est-elle associée au déclin structurel de la consommation de la télévision chez les jeunes adultes (18–34 ans)
-> Nous réaliserons ici une analyse temporelle et comparatrice couvrant dix ans de données (2013–2024)."*
-
----
-
-### 📐 Hypothèses de recherche
-
-| Hypothèse | Énoncé |
-|---|---|
-| **H1** | La progression du temps passé sur les réseaux sociaux est corrélée négativement avec la durée d'écoute TV chez les 18-34 ans |
-| **H2** | L'explosion des plateformes sociales courtes (TikTok, Instagram Reels) coïncide avec une période de chute TV |
-| **H3** | L'effet est générationnel et s'accentue dans le temps - le fossé entre jeunes et seniors se creuse chaque année |
-
----
-
-###  Structure du projet
-
-```
-social-media-vs-traditional-media/
-│
-├── README.md                          ← Ce fichier
-├── RESEARCH_FRAMEWORK.md              ← Cadre scientifique complet
-│
-├── 01_data_collection/                ← Scripts de collecte
-│   ├── scrape_ourworldindata.py       ← API Our World in Data
-│   ├── scrape_reuters_dnr.py          ← Reuters Institute DNR
-│   └── collect_cnc_mediametrie.py     ← Données France (CNC)
-│
-├── 02_data/
-│   ├── raw/                           ← Données brutes (non modifiées)
-│   └── processed/                     ← Données nettoyées
-│
-├── 03_notebooks/
-│   ├── 01_cleaning_wrangling.ipynb    ← Nettoyage & préparation
-│   ├── 02_eda_exploratory.ipynb       ← Analyse exploratoire
-│   └── 03_dataviz_final.ipynb         ← Visualisations finales
-
-└── 05_outputs/
-    ├── graphs/                        ← Exports graphiques
-    └── report_summary.md              ← Synthèse des résultats
-```
-
----
-
-### Stack technique
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
-![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-
-**Librairies Python :** `pandas`, `numpy`, `matplotlib`, `seaborn`, `requests`, `beautifulsoup4`, `scipy`
-
----
-
-### Sources de données
-
-| Source | Contenu | Couverture |
-|---|---|---|
-| Our World in Data | Temps passé sur médias numériques / TV | Multi-pays, 2013–2024 |
-| Reuters Institute DNR | Usage réseaux sociaux vs TV par âge | 47 pays, 2013–2025 |
-| DataReportal / GWI | Temps social media vs streaming mondial | Mondial, 2017–2024 |
-| CNC / Médiamétrie | TV France 15-49/50+ (série longue) | France, 2009–2023 |
-| CNC Chiffres clés 2024 + Médiamat 2018 | TV France **15-34 ans** (série fine, multi-sources) | France, 2013–2023 |
-
->  **Note 2024 :** Médiamétrie a adopté une nouvelle méthodologie au 01/01/2024 (tous foyers, tous lieux, tous écrans — population élargie de 57,3M → 62,6M). Les données 2024 **ne sont pas comparables** à la série historique et sont encodées comme `NaN` documenté dans tous les datasets TV.
-
----
-
-### Auteure
-
-**Inès Amdjahed** — Data analyst spécialisée en sciences sociales & études médias
-📧 amdjahedines@gmail.com · [LinkedIn](https://linkedin.com/in/ines-amdjahed)
-
----
----
-
-=======
-# La génération débranchée : réseaux sociaux et effondrement de la TV chez les 15-34 ans
-
-**[English](#english)** · **[Français](#français)**
-
----
-
->>>>>>> b7c135d (update H2)
 ## English
 
 ### Project overview
@@ -116,21 +8,13 @@ Three hypotheses are tested and confirmed on empirical data from primary institu
 
 ---
 
-<<<<<<< HEAD
 ### Research Question
-=======
-### Research question
->>>>>>> b7c135d (update H2)
 
 > "To what extent is the rise of social media platforms associated with the structural decline of linear TV consumption among young adults (15–34)?"
 
 ---
 
-<<<<<<< HEAD
 ### Research Hypotheses
-=======
-### Hypotheses
->>>>>>> b7c135d (update H2)
 
 | Hypothesis | Statement | Result |
 |---|---|---|
@@ -140,11 +24,7 @@ Three hypotheses are tested and confirmed on empirical data from primary institu
 
 ---
 
-<<<<<<< HEAD
 ### Tech Stack
-=======
-### Key results
->>>>>>> b7c135d (update H2)
 
 - TV viewing among 15–34s fell by **52%** between 2013 and 2023 (155 to 74 min/day)
 - Pearson correlation: **r = -0.784** (vs -0.674 with the broader 15–49 bracket, demonstrating the dilution effect of over-aggregation)
@@ -153,52 +33,7 @@ Three hypotheses are tested and confirmed on empirical data from primary institu
 
 ---
 
-<<<<<<< HEAD
 ### Data Sources
-=======
-### Project structure
-
-```
-social-media-vs-traditional-media/
-|
-|-- README.md
-|-- RESEARCH_FRAMEWORK.md          <- Full scientific framework
-|
-|-- 01_data_collection/
-|   |-- scrape_ourworldindata.py
-|   |-- scrape_reuters_dnr.py
-|   `-- collect_cnc_mediametrie.py
-|
-|-- 02_data/
-|   |-- raw/
-|   `-- processed/
-|
-|-- 03_notebooks/
-|   |-- 01_cleaning_wrangling.ipynb
-|   |-- 02_eda_exploratory.ipynb
-|
-`-- 05_outputs/
-    |-- graphs/
-    `-- report_summary.md
-```
-
----
-
-### Tech stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![Scipy](https://img.shields.io/badge/Scipy-8CAAE6?style=flat&logo=scipy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
-![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
-
-`pandas` · `numpy` · `matplotlib` · `seaborn` · `scipy` · `requests` · `beautifulsoup4`
-
----
-
-### Data sources
->>>>>>> b7c135d (update H2)
 
 | Source | Content | Coverage |
 |---|---|---|
