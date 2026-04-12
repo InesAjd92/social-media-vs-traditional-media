@@ -16,7 +16,7 @@ Three hypotheses are tested and confirmed on empirical data from primary institu
  
 ### Research question
  
-> "To what extent is the rise of social media platforms associated with the structural decline of linear TV consumption among young adults (15–34)? A longitudinal analysis, France, 2013–2023."
+> "To what extent is the rise of social media platforms associated with the structural decline of linear TV consumption among young adults (15–34)?"
  
 ---
  
@@ -59,7 +59,6 @@ social-media-vs-traditional-media/
 |-- 03_notebooks/
 |   |-- 01_cleaning_wrangling.ipynb
 |   |-- 02_eda_exploratory.ipynb
-|   `-- 03_dataviz_final.ipynb
 |
 `-- 05_outputs/
     |-- graphs/

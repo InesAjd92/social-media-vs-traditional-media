@@ -1,136 +1,3 @@
-# Cadre de recherche / Research framework
-
-> **[Français](#français)** ·  **[English](#english)**
-
----
-
-## Français
-
-### 1. Contexte & justification
-
-La transformation des habitudes médiatiques constitue l'un des phénomènes sociaux les plus documentés de la dernière décennie. Depuis l'émergence des smartphones (2007) et l'essor des plateformes sociales (2010–2015), les comportements de consommation médiatique ont connu une mutation profonde, particulièrement marquée chez les jeunes adultes.
-
-Deux tendances simultanées et potentiellement liées sont observées :
-1. Une **croissance exponentielle** du temps passé sur les réseaux sociaux numériques (Instagram, TikTok, YouTube, X/Twitter)
-2. Un **déclin structurel** de la consommation des médias traditionnels — télévision linéaire, cinéma, presse papier
-
-Ce projet vise à **quantifier et caractériser** la relation entre ces deux phénomènes à partir de données empiriques multi-sources et multi-pays.
-
----
-
-### 2. Problématique
-
-> *"Dans quelle mesure la montée en puissance des réseaux sociaux numériques et des plateformes de streaming est-elle associée au déclin structurel de la consommation des médias traditionnels (télévision linéaire, cinéma, presse) chez les jeunes adultes (18–34 ans) ? Une analyse longitudinale et comparative multi-pays (2013–2024)."*
-
-Cette problématique se décline en trois sous-questions :
-
-- **SQ1** — Existe-t-il une corrélation statistiquement significative entre la croissance du temps passé sur les réseaux sociaux et la baisse de consommation TV chez les 18-34 ans ?
-- **SQ2** — Le streaming (Netflix, Disney+, YouTube) constitue-t-il une étape intermédiaire dans ce décrochage, ou un phénomène distinct ?
-- **SQ3** — L'effet est-il uniforme selon les pays, les générations, et les types de médias traditionnels ?
-
----
-
-### 3. Hypothèses de recherche
-
-#### H1 — Hypothèse de substitution directe
-*La progression du temps passé sur les réseaux sociaux est corrélée négativement avec la durée d'écoute TV linéaire chez les 18-34 ans.*
-
-**Indicateurs mesurables :**
-- Temps moyen quotidien sur réseaux sociaux (minutes/jour) par tranche d'âge
-- Durée d'écoute TV linéaire (minutes/jour) par tranche d'âge
-- Coefficient de corrélation de Pearson entre les deux séries temporelles
-
-**Résultat attendu :** r < -0.6, p < 0.05
-
----
-
-H2 — Hypothèse de concomitance plateformes / chute TV
-*L'explosion des plateformes sociales courtes (TikTok, Instagram Reels) coïncide temporellement avec la période de chute TV la plus prononcée chez les 15-34 ans (2018–2023), suggérant un effet de substitution directe de l'attention.*
-
-**Indicateurs mesurables :**
-- Croissance MAU des principales plateformes sociales (2012–2024)
-- Superposition avec la période de chute TV 15-34 ans la plus forte (−52% en 5 ans)
-- Analyse des ruptures de tendance (breakpoint 2018 / COVID 2020)
-
-**Résultat attendu :** Corrélation temporelle entre explosion MAU TikTok (+1.7B, 2018–2021) et accélération du décrochage TV 15-34
----
-
-#### H3 — Hypothèse de fracture générationnelle
-*L'effet est générationnel et s'accentue dans le temps — le fossé entre jeunes (18-34) et seniors (50+) se creuse chaque année.*
-
-**Indicateurs mesurables :**
-- Écart de durée d'écoute TV entre 18-34 ans et 50+ ans (delta en minutes)
-- Évolution de cet écart de 2013 à 2024
-- Test de tendance linéaire (régression)
-
-**Résultat attendu :** Pente positive significative de l'écart générationnel
-
----
-
-### 4. Méthodologie
-
-#### 4.1 Type de recherche
-Étude **quantitative longitudinale et comparative** basée sur des données secondaires agrégées.
-
-#### 4.2 Périmètre
-- **Temporel :** 2013–2024 (période couvrant l'essor des smartphones et réseaux sociaux)
-- **Géographique :** Multi-pays (France, États-Unis, Royaume-Uni, Allemagne, pays nordiques)
-- **Population cible :** Jeunes adultes 18–34 ans, comparés aux 35-49 ans et 50+ ans
-
-#### 4.3 Pipeline de traitement des données
-
-```
-Collecte (scraping/API)
-        ↓
-Nettoyage & harmonisation (pandas)
-        ↓
-Analyse exploratoire — EDA (Python)
-        ↓
-Tests statistiques (corrélation, régression)
-        ↓
-Visualisations finales (matplotlib/seaborn)
-        ↓
-Dashboard interactif (Power BI)
-```
-
-#### 4.4 Limites méthodologiques
-- Les données agrégées ne permettent pas d'inférer la causalité, seulement la corrélation
-- Les ruptures méthodologiques dans les séries (changements de périmètre de mesure) doivent être signalées
-- Les données auto-déclarées (sondages) peuvent être soumises à des biais de désirabilité sociale
-- La comparabilité internationale reste limitée par les différences de méthodes de collecte
-
----
-
-### 5. Cadre théorique
-
-Ce projet s'appuie sur trois courants théoriques :
-
-**Theory of Media Displacement (Neuman, 1991)**
-L'adoption d'un nouveau média tend à réduire le temps consacré aux médias préexistants, notamment lorsqu'ils satisfont des besoins similaires (information, divertissement).
-
-**Uses and Gratifications Theory (Katz, Blumler & Gurevitch, 1974)**
-Les individus choisissent activement les médias en fonction des gratifications qu'ils en attendent. Les réseaux sociaux offrent des gratifications supplémentaires (interaction sociale, production de contenu) absentes des médias traditionnels.
-
-**Digital Native vs Digital Immigrant (Prensky, 2001)**
-Les cohortes nées après 1995 ont développé des habitudes médiatiques nativement numériques, rendant leur décrochage des médias traditionnels structurellement différent de celui des générations précédentes.
-
----
-
-### 6. Variables
-
-| Variable | Type | Source | Mesure |
-|---|---|---|---|
-| Temps réseaux sociaux | Continue, indépendante | GWI / OWID | Minutes/jour |
-| Durée écoute TV | Continue, dépendante | Médiamétrie / OWID | Minutes/jour |
-| Temps streaming | Continue, médiatrice | Netflix IR / OWID | Minutes/jour |
-| Tranche d'âge | Catégorielle | Toutes sources | 18-34 / 35-49 / 50+ |
-| Pays | Catégorielle | Toutes sources | ISO 3166 |
-| Année | Temporelle | Toutes sources | 2013–2024 |
-
----
----
-
-=======
 # Cadre de recherche
 
 **[English](#english)** · **[Français](#français)**
@@ -146,7 +13,7 @@ The transformation of media habits is one of the most documented social phenomen
 Two simultaneous and potentially related trends are observed:
 
 1. Exponential growth in time spent on social media (Instagram, TikTok, YouTube, X/Twitter)
-2. Structural decline in traditional media consumption: linear TV, cinema, print press
+2. Structural decline in traditional media consumption
 
 This project aims to quantify and characterize the relationship between these two phenomena using empirical, multi-source, multi-country data.
 
@@ -154,7 +21,7 @@ This project aims to quantify and characterize the relationship between these tw
 
 ### 2. Research question
 
-> "To what extent is the rise of social media platforms associated with the structural decline of traditional media consumption among young adults (15–34)?"
+> "To what extent is the rise of social media platforms associated with the structural decline of traditional media consumption, especially TV, among young adults (15–34)?"
 
 Three sub-questions:
 
@@ -207,7 +74,7 @@ Three sub-questions:
 ### 4. Methodology
 
 #### 4.1 Research type
-Quantitative study based on aggregated secondary data.
+Quantitative longitudinal study based on aggregated secondary data.
 
 #### 4.2 Scope
 - **Temporal:** 2013–2023 (2024 = documented NaN, Médiamétrie methodology break)
@@ -228,8 +95,6 @@ Exploratory data analysis (Python)
 Statistical tests (correlation, regression)
     |
 Final visualizations (matplotlib / seaborn)
-    |
-Interactive dashboard (Power BI)
 ```
 
 #### 4.4 Methodological limitations
@@ -277,7 +142,7 @@ La transformation des habitudes médiatiques constitue l'un des phénomènes soc
 Deux tendances simultanées et potentiellement liées sont observées :
 
 1. Une croissance exponentielle du temps passé sur les réseaux sociaux numériques (Instagram, TikTok, YouTube, X/Twitter)
-2. Un déclin structurel de la consommation des médias traditionnels : télévision linéaire, cinéma, presse papier
+2. Un déclin structurel de la consommation des médias traditionnels
 
 Ce projet vise à quantifier et caractériser la relation entre ces deux phénomènes à partir de données empiriques multi-sources et multi-pays.
 
@@ -285,7 +150,7 @@ Ce projet vise à quantifier et caractériser la relation entre ces deux phénom
 
 ### 2. Problématique
 
-> "Dans quelle mesure la montée en puissance des réseaux sociaux numériques est-elle associée au déclin structurel de la consommation des médias traditionnels chez les jeunes adultes (15–34 ans) ?"
+> "Dans quelle mesure la montée en puissance des réseaux sociaux numériques est-elle associée au déclin structurel de la consommation des médias traditionnels, et plus particulièrement la TV, chez les jeunes adultes (15–34 ans)"
 
 Cette problématique se décline en trois sous-questions :
 
@@ -359,8 +224,7 @@ Analyse exploratoire (Python)
 Tests statistiques (corrélation, régression)
     |
 Visualisations finales (matplotlib / seaborn)
-    |
-Dashboard interactif (Power BI)
+
 ```
 
 #### 4.4 Limites méthodologiques
