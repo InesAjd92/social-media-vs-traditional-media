@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Cadre de Recherche / Research Framework
+# Cadre de recherche / Research framework
 
 > **[Français](#français)** ·  **[English](#english)**
 
@@ -7,7 +6,7 @@
 
 ## Français
 
-### 1. Contexte & Justification
+### 1. Contexte & justification
 
 La transformation des habitudes médiatiques constitue l'un des phénomènes sociaux les plus documentés de la dernière décennie. Depuis l'émergence des smartphones (2007) et l'essor des plateformes sociales (2010–2015), les comportements de consommation médiatique ont connu une mutation profonde, particulièrement marquée chez les jeunes adultes.
 
@@ -138,7 +137,6 @@ Les cohortes nées après 1995 ont développé des habitudes médiatiques native
 
 ---
 
->>>>>>> b7c135d (update H2)
 ## English
 
 ### 1. Context

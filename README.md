@@ -1,40 +1,88 @@
+# Réseaux sociaux et effondrement de la TV chez les 15-34 ans
+ 
+**[English](#english)** · **[Français](#français)**
+ 
+---
+ 
 ## English
-
+ 
 ### Project overview
-
+ 
 This data research project quantifies the relationship between the rise of social media platforms and the structural decline of linear TV consumption among young adults (15–34) in France, over a ten-year period (2013–2023).
-
+ 
 Three hypotheses are tested and confirmed on empirical data from primary institutional sources (CNC, Médiamétrie, GWI).
-
+ 
 ---
-
-### Research Question
-
-> "To what extent is the rise of social media platforms associated with the structural decline of linear TV consumption among young adults (15–34)?"
-
+ 
+### Research question
+ 
+> "To what extent is the rise of social media platforms associated with the structural decline of linear TV consumption among young adults (15–34)? A longitudinal analysis, France, 2013–2023."
+ 
 ---
-
-### Research Hypotheses
-
+ 
+### Hypotheses
+ 
 | Hypothesis | Statement | Result |
 |---|---|---|
 | H1 | Growth in social media time is negatively correlated with linear TV viewing among 15–34s | Confirmed : r = -0.784, p < 0.01 |
 | H2 | The explosion of short-form platforms (TikTok, Reels) coincides with the sharpest TV decline period among 15–34s (2018–2023) | Confirmed : temporal concomitance |
 | H3 | The generational gap in TV consumption between 50+ and 15–34s widens each year | Confirmed : +10.7 min/year, p < 0.001 |
-
+ 
 ---
-
-### Tech Stack
-
+ 
+### Key results
+ 
 - TV viewing among 15–34s fell by **52%** between 2013 and 2023 (155 to 74 min/day)
 - Pearson correlation: **r = -0.784** (vs -0.674 with the broader 15–49 bracket, demonstrating the dilution effect of over-aggregation)
 - Generational gap reached **4 hours 2 minutes per day** in 2023 (50+ vs 15–34s)
 - TikTok growth (+1.7B MAU, 2018–2021) temporally coincides with the steepest phase of TV decline
-
+ 
 ---
-
-### Data Sources
-
+ 
+### Project structure
+ 
+```
+social-media-vs-traditional-media/
+|
+|-- README.md
+|-- RESEARCH_FRAMEWORK.md          <- Full scientific framework
+|
+|-- 01_data_collection/
+|   |-- scrape_ourworldindata.py
+|   |-- scrape_reuters_dnr.py
+|   `-- collect_cnc_mediametrie.py
+|
+|-- 02_data/
+|   |-- raw/
+|   `-- processed/
+|
+|-- 03_notebooks/
+|   |-- 01_cleaning_wrangling.ipynb
+|   |-- 02_eda_exploratory.ipynb
+|   `-- 03_dataviz_final.ipynb
+|
+`-- 05_outputs/
+    |-- graphs/
+    `-- report_summary.md
+```
+ 
+---
+ 
+### Tech stack
+ 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![Scipy](https://img.shields.io/badge/Scipy-8CAAE6?style=flat&logo=scipy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat)
+![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+ 
+`pandas` · `numpy` · `matplotlib` · `seaborn` · `scipy` · `requests` · `beautifulsoup4`
+ 
+---
+ 
+### Data sources
+ 
 | Source | Content | Coverage |
 |---|---|---|
 | GWI via DataReportal | Daily time on social media | Global averages, 2013–2024 |
@@ -42,19 +90,18 @@ Three hypotheses are tested and confirmed on empirical data from primary institu
 | CNC Chiffres clés 2024 | TV France 15–34 (multi-source reconstruction) | France, 2013–2023 |
 | CNC / Médiamétrie | TV France 15–49 / 50+ long series | France, 2009–2023 |
 | Meta, ByteDance, Snap, Alphabet earnings | Platform MAU | Global, 2012–2024 |
-
+ 
 > **Note on 2024 data:** Médiamétrie adopted a new methodology on 01/01/2024 (all households, all locations, all screens). 2024 data are not comparable to the historical series and are documented as `NaN` across all TV datasets.
-
+ 
 > **Note on age brackets:** The main bracket is 15–34 (multi-source reconstruction). The 15–49 series is retained for comparison to demonstrate the dilution effect of over-aggregation. Data at the 18–24 level are not available in long series from French institutional sources.
-
+ 
 ---
-
+ 
 ### Author
-
+ 
 **Inès Amdjahed** : Data analyst
 amdjahedines@gmail.com · [LinkedIn](https://linkedin.com/in/ines-amdjahed) · [Portfolio](https://inesajd92.github.io/)
-
----
+ 
 ---
 
 ## Français
