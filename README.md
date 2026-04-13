@@ -8,7 +8,7 @@
  
 ### Project overview
  
-This data research project quantifies the relationship between the rise of social media platforms and the structural decline of linear TV consumption among young adults (15–34) in France, over a ten-year period (2013–2023).
+This data research project quantifies the relationship between the rise of social media platforms and the structural decline of TV consumption among young adults (15–34) in France, over a ten-year period (2013–2023).
  
 Three hypotheses are tested and confirmed on empirical data from primary institutional sources (CNC, Médiamétrie, GWI).
  
@@ -16,7 +16,7 @@ Three hypotheses are tested and confirmed on empirical data from primary institu
  
 ### Research question
  
-> "To what extent is the rise of social media platforms associated with the structural decline of linear TV consumption among young adults (15–34)?"
+> "To what extent is the rise of social media platforms associated with the structural decline of TV consumption among young adults (15–34)?"
  
 ---
  
@@ -33,7 +33,7 @@ Three hypotheses are tested and confirmed on empirical data from primary institu
 ### Key results
  
 - TV viewing among 15–34s fell by **52%** between 2013 and 2023 (155 to 74 min/day)
-- Pearson correlation: **r = -0.784** (vs -0.674 with the broader 15–49 bracket, demonstrating the dilution effect of over-aggregation)
+- Pearson correlation: **r = -0.865** (vs -0,781 with the broader 15–49 bracket, demonstrating the dilution effect of over-aggregation)
 - Generational gap reached **4 hours 2 minutes per day** in 2023 (50+ vs 15–34s)
 - TikTok growth (+1.7B MAU, 2018–2021) temporally coincides with the steepest phase of TV decline
  
@@ -123,7 +123,7 @@ Trois hypothèses sont testées et confirmées sur des données empiriques issue
 
 | Hypothèse | Énoncé | Résultat |
 |---|---|---|
-| H1 | La progression du temps passé sur les réseaux sociaux est corrélée négativement avec la durée d'écoute TV chez les 15–34 ans | Confirmée : r = -0,784, p < 0,01 |
+| H1 | La progression du temps passé sur les réseaux sociaux est corrélée négativement avec la durée d'écoute TV chez les 15–34 ans | Confirmée : r = -0,965, p < 0,01 |
 | H2 | L'explosion des plateformes courtes (TikTok, Reels) coïncide avec la période de chute TV la plus prononcée chez les 15–34 ans (2018–2023) | Confirmée : concomitance temporelle |
 | H3 | Le fossé de consommation TV entre les 50 ans+ et les 15–34 ans se creuse chaque année | Confirmée : +10,7 min/an, p < 0,001 |
 
@@ -132,7 +132,7 @@ Trois hypothèses sont testées et confirmées sur des données empiriques issue
 ### Résultats clés
 
 - La consommation TV des 15–34 ans a chuté de **52 %** entre 2013 et 2023 (155 à 74 min/jour)
-- Corrélation de Pearson : **r = -0,784** (vs -0,674 avec la tranche 15–49, ce qui illustre l'effet de dilution de l'agrégation)
+- Corrélation de Pearson : **r = -0,865** (vs -0,781 avec la tranche 15–49, ce qui illustre l'effet de dilution de l'agrégation)
 - Le fossé générationnel atteint **4 heures 2 minutes par jour** en 2023 (50 ans+ vs 15–34 ans)
 - L'explosion de TikTok (+1,7 milliard de MAU, 2018–2021) coïncide temporellement avec la phase de décrochage TV la plus prononcée
 
